@@ -1,0 +1,29 @@
+* {
+    padding: 0, 0, 0, 0;
+    margin: 0, 0, 0, 0;
+}
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #444F38 ;
+    font-family: "Quantico";
+    font-weight: 700;
+    font-style: italic;
+}
+main {
+    width: 60%;
+    background-color: #6A7D56;
+    font-family: "Quantico";
+    font-weight: 400;
+}
+body {
+    background-color: #5B5B38;
+    color: #a3b193;
+}
+footer {
+    width: 100%;
+    height: 140px;
+    background-color: #59522E ;
+    font-family: "Quantico";
+    font-weight: 400;
+}
