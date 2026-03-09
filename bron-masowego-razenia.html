@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Broń masowego rażenia</title>
+
+<link rel="stylesheet" href="style.css">
+<style>
+    .cards-grid.full {
+    grid-template-columns: 1fr;
+    }
+    
+
+.main-content img{
+    display: block;
+    margin: 25px auto;
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.main-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.main-content ul li {
+    position: relative;
+    padding: 16px 22px;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+    cursor: default;
+    background: linear-gradient(45deg, #90AB73, #6A7D56, #A1C17A, #7A8A5C);
+    background-size: 300% 300%;
+    animation: gradientShift 8s ease infinite;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.main-content ul li::before {
+    content: "🌐";
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+}
+
+.main-content ul li:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.45);
+}
+
+.main-content ul li::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.15);
+    transform: rotate(45deg) translateX(-100%);
+    transition: transform 0.7s ease;
+}
+
+.main-content ul li:hover::after {
+    transform: rotate(45deg) translateX(100%);
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.main-content ul li::before {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+}
+
+
+.main-content ul li:nth-child(1)::before { content: "🇺🇸"; } 
+.main-content ul li:nth-child(2)::before { content: "🇷🇺"; } 
+.main-content ul li:nth-child(3)::before { content: "🇨🇳"; } 
+.main-content ul li:nth-child(4)::before { content: "🇫🇷"; } 
+.main-content ul li:nth-child(5)::before { content: "🇬🇧"; } 
+.main-content ul li:nth-child(6)::before { content: "🇮🇳"; } 
+.main-content ul li:nth-child(7)::before { content: "🇵🇰"; } 
+.main-content ul li:nth-child(8)::before { content: "🇰🇵"; } 
+
+.main-content img {
+    max-width: calc(100% - 50px); 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, max-width 0.3s ease;
+}
+
+.main-content img:hover {
+    transform: scale(1.05);
+    max-width: 100%; 
+}
+/* Nagłówki główne */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+    color: #fff;
+    background: linear-gradient(90deg, #A1C17A, #6A7D56);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.main-content h1:hover,
+.main-content h2:hover,
+.main-content h3:hover {
+    transform: scale(1.05);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+
+.main-content p {
+    color: var(--text-soft);
+    line-height: 1.8;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.main-content p:hover {
+    color: #e7f0c3; 
+}
+
+
+.main-content a {
+    position: relative;
+    color: #90AB73;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-content a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #A1C17A, #6A7D56);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.main-content a:hover {
+    color: #A1C17A;
+}
+
+.main-content a:hover::after {
+    transform: scaleX(1);
+}
+
+
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+
+<div class="header-top container">
+
+<div class="brand">
+<p class="brand-label">Projekt edukacyjny</p>
+<h1>UZBROJENIE</h1>
+<p class="brand-subtitle">
+Przegląd współczesnych i historycznych rodzajów uzbrojenia
+</p>
+</div>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">
+☰
+</button>
+
+</div>
+
+<nav class="main-nav" id="mainNav">
+
+<div class="container nav-inner">
+
+<a href="index.html">Strona główna</a>
+<a href="#">Lotnictwo</a>
+<a href="bron-masowego-razenia.html">Broń masowego rażenia</a>
+<a href="#">Czołgi</a>
+<a href="#">Broń palna</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<div class="page-layout container">
+
+
+<aside class="sidebar left-sidebar">
+
+<h2>Szybka nawigacja</h2>
+
+<ul>
+<li><a href="#wstep">Wstęp</a></li>
+<li><a href="#rodzaje">Rodzaje</a></li>
+<li><a href="#atomowa">Broń atomowa</a></li>
+<li><a href="#chemiczna">Broń chemiczna</a></li>
+<li><a href="#biologiczna">Broń biologiczna</a></li>
+</ul>
+
+<div class="sidebar-box">
+
+<h3>Temat strony</h3>
+
+<p>
+Broń masowego rażenia to jeden z najgroźniejszych rodzajów uzbrojenia,
+zdolny do zniszczenia ogromnych obszarów oraz spowodowania dużej liczby
+ofiar w krótkim czasie.
+</p>
+
+</div>
+
+</aside>
+
+
+<main class="main-content">
+
+    <section class="section" id="atomowa">
+    
+    <div class="section-heading">
+    <p class="section-tag">Rodzaj broni</p>
+    <h2>Broń atomowa</h2>
+    </div>
+    
+    <div style="text-align:center;">
+    <img src="assets/atomowa.jpg" alt="Bomba atomowa">
+    </div>
+    
+    <p>
+    Broń atomowa jest jednym z najbardziej niszczycielskich wynalazków
+    w historii ludzkości. Jej działanie opiera się na reakcjach jądrowych,
+    w których w bardzo krótkim czasie uwalniana jest ogromna ilość energii.
+    Eksplozja bomby atomowej powoduje powstanie potężnej fali uderzeniowej,
+    bardzo wysokiej temperatury oraz promieniowania jonizującego.
+    </p>
+    
+    <p>
+    W wyniku wybuchu mogą zostać zniszczone całe miasta, a ludność
+    znajdująca się w pobliżu eksplozji ginie natychmiast lub doznaje
+    ciężkich obrażeń. Dodatkowym zagrożeniem jest promieniowanie
+    radioaktywne, które może powodować choroby popromienne,
+    mutacje genetyczne oraz skażenie środowiska na wiele lat.
+    </p>
+    
+    <p>
+    Najbardziej znanym użyciem broni atomowej było zrzucenie bomb
+    na japońskie miasta Hiroszima i Nagasaki w 1945 roku podczas
+    II wojny światowej. Wydarzenie to pokazało całemu światu
+    jak ogromną siłę niszczenia posiada broń jądrowa.
+    </p>
+    
+    <div style="text-align:center;">
+    <img src="assets/atomowa2.jpg" alt="Skutki bomby atomowej">
+    </div>
+    
+    </section>
+    
+    
+    <section class="section" id="chemiczna">
+    
+    <div class="section-heading">
+    <p class="section-tag">Rodzaj broni</p>
+    <h2>Broń chemiczna</h2>
+    </div>
+    
+    <div style="text-align:center;">
+    <img src="assets/chemiczna.jpg" alt="Broń chemiczna">
+    </div>
+    
+    <p>
+    Broń chemiczna polega na wykorzystaniu toksycznych substancji
+    chemicznych w celu zabijania ludzi lub powodowania poważnych
+    uszkodzeń organizmu. Substancje te mogą oddziaływać na układ
+    nerwowy, drogi oddechowe lub skórę człowieka.
+    </p>
+    
+    <p>
+    Do najbardziej znanych środków chemicznych należą między innymi
+    sarin, iperyt siarkowy oraz gaz musztardowy. Substancje te mogą
+    powodować duszenie się, poparzenia skóry, paraliż układu
+    nerwowego lub trwałe uszkodzenia zdrowia.
+    </p>
+    
+    <p>
+    Broń chemiczna była szeroko używana podczas I wojny światowej.
+    Ataki gazowe powodowały ogromne cierpienie żołnierzy
+    oraz doprowadziły do powstania pierwszych międzynarodowych
+    prób ograniczenia stosowania tego rodzaju uzbrojenia.
+    </p>
+    
+    <div style="text-align:center;">
+    <img src="assets/chemiczna2.jpg" alt="Atak gazowy">
+    </div>
+    
+    </section>
+    
+    
+    <section class="section" id="biologiczna">
+    
+    <div class="section-heading">
+    <p class="section-tag">Rodzaj broni</p>
+    <h2>Broń biologiczna</h2>
+    </div>
+    
+    <div style="text-align:center;">
+    <img src="assets/biologiczna.jpeg" alt="Broń biologiczna">
+    </div>
+    
+    <p>
+    Broń biologiczna wykorzystuje bakterie, wirusy lub toksyny
+    do wywoływania chorób wśród ludzi, zwierząt lub roślin.
+    Jej celem jest szybkie rozprzestrzenienie epidemii
+    i spowodowanie chaosu w społeczeństwie.
+    </p>
+    
+    <p>
+    Do potencjalnych czynników biologicznych zalicza się
+    między innymi wąglik, ospę prawdziwą czy różnego rodzaju
+    toksyny bakteryjne. Choroby wywołane przez te organizmy
+    mogą być bardzo trudne do opanowania i prowadzić do
+    dużej liczby ofiar.
+    </p>
+    
+    <p>
+    Jednym z największych zagrożeń związanych z bronią
+    biologiczną jest jej zdolność do szybkiego
+    rozprzestrzeniania się. W przeciwieństwie do broni
+    konwencjonalnej skutki ataku biologicznego mogą
+    utrzymywać się przez długi czas.
+    </p>
+    
+    <div style="text-align:center;">
+    <img src="assets/biologiczna2.jpg" alt="Mikroorganizmy">
+    </div>
+    
+    </section>
+    
+    
+    <section class="section" id="historia">
+    
+    <div class="section-heading">
+    <p class="section-tag">Historia</p>
+    <h2>Historia użycia broni masowego rażenia</h2>
+    </div>
+    
+    <p>
+    Rozwój broni masowego rażenia rozpoczął się na większą
+    skalę w XX wieku. Wraz z rozwojem technologii wojskowej
+    państwa zaczęły tworzyć coraz bardziej niszczycielskie
+    rodzaje uzbrojenia.
+    </p>
+    
+    <p>
+    Podczas I wojny światowej po raz pierwszy masowo użyto
+    broni chemicznej. Gazy bojowe powodowały ogromne
+    cierpienie żołnierzy oraz zmusiły armie do opracowania
+    nowych metod ochrony, takich jak maski przeciwgazowe.
+    </p>
+    
+    <p>
+    Najbardziej dramatycznym wydarzeniem było użycie
+    broni atomowej w 1945 roku. Zniszczenie Hiroszimy
+    i Nagasaki pokazało, że jedna bomba może zniszczyć
+    całe miasto i spowodować śmierć setek tysięcy ludzi.
+    </p>
+    
+    </section>
+    
+    
+    <section class="section" id="traktaty">
+    
+    <div class="section-heading">
+    <p class="section-tag">Prawo międzynarodowe</p>
+    <h2>Międzynarodowe traktaty zakazujące tej broni</h2>
+    </div>
+    
+    <p>
+    Ze względu na ogromne zagrożenie dla ludzkości wiele
+    państw podpisało międzynarodowe porozumienia mające
+    na celu ograniczenie produkcji oraz używania broni
+    masowego rażenia.
+    </p>
+    
+    <p>
+    Jednym z najważniejszych dokumentów jest Traktat
+    o nierozprzestrzenianiu broni jądrowej (NPT),
+    którego celem jest ograniczenie liczby państw
+    posiadających broń atomową.
+    </p>
+    
+    <p>
+    Istnieje również Konwencja o zakazie broni chemicznej
+    oraz Konwencja o zakazie broni biologicznej.
+    Dokumenty te zabraniają produkcji, magazynowania
+    oraz używania tego typu broni.
+    </p>
+    
+    </section>
+    <section class="section">
+        <p>
+            Obecnie kilka państw posiada największe arsenały broni jądrowej na świecie:
+            </p>
+            
+            <ul>
+            <li>USA</li>
+            <li>Rosja</li>
+            <li>Chiny</li>
+            <li>Francja</li>
+            <li>Wielka Brytania</li>
+            <li>Indie</li>
+            <li>Pakistan</li>
+            <li>Korea Północna</li>
+            </ul>
+            
+            <p>
+            Państwa te utrzymują broń nuklearną głównie jako element
+            odstraszania militarnego. Oznacza to, że jej posiadanie ma
+            zniechęcać inne kraje do ataku, ponieważ potencjalne skutki
+            wojny nuklearnej byłyby katastrofalne dla całego świata.
+            </p>
+    </section>
+    </main>
+
+<aside class="sidebar right-sidebar">
+
+<h2>Panel boczny</h2>
+
+<div class="sidebar-box">
+
+<h3>Ciekawostka</h3>
+
+<p>
+Broń masowego rażenia jest objęta wieloma międzynarodowymi
+traktatami ograniczającymi jej rozwój i użycie.
+</p>
+
+</div>
+
+<div class="sidebar-box">
+
+<h3>Autor</h3>
+
+<p>Norbert</p>
+
+</div>
+
+</aside>
+
+
+</div>
+
+
+<footer class="site-footer">
+
+<div class="container footer-inner">
+
+<p>&copy; 2026 Projekt szkolny — Uzbrojenie</p>
+<p>Podstrona: Broń masowego rażenia</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

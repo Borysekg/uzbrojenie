@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Broń palna</title>
+
+<link rel="stylesheet" href="style.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+<style>
+  /* Uniwersalne ustawienia obrazków w tej podstronie */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  /* Siatka kart z obrazkami */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Obrazy w sekcjach */
+  .section img {
+    width: 100%;
+    max-height: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-top container">
+
+    <div class="brand">
+      <p class="brand-label">Projekt edukacyjny</p>
+      <h1>BROŃ PALNA</h1>
+      <p class="brand-subtitle">Rodzaje, budowa i zastosowanie broni palnej</p>
+    </div>
+
+  </div>
+
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html">Strona główna</a>
+      <a href="#bron-krotka">Broń krótka</a>
+      <a href="#bron-dluga">Broń długa</a>
+      <a href="#specjalna">Broń specjalna</a>
+      <a href="#budowa">Budowa broni</a>
+      <a href="#historia">Historia</a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-layout container">
+
+  <aside class="sidebar left-sidebar">
+
+    <h2>Nawigacja</h2>
+
+    <ul>
+      <li><a href="#bron-krotka">Broń krótka</a></li>
+      <li><a href="#bron-dluga">Broń długa</a></li>
+      <li><a href="#specjalna">Broń specjalna</a></li>
+      <li><a href="#budowa">Budowa broni</a></li>
+      <li><a href="#historia">Historia</a></li>
+    </ul>
+
+    <div class="sidebar-box">
+      <h3>Informacja</h3>
+      <p>
+        Broń palna to rodzaj broni, w której pocisk jest wystrzeliwany
+        z lufy dzięki energii powstałej podczas spalania materiału miotającego.
+        Współczesne modele różnią się przeznaczeniem, zasięgiem i konstrukcją.
+      </p>
+    </div>
+
+  </aside>
+
+  <main class="main-content">
+
+    <!-- Sekcja wprowadzająca -->
+    <section class="hero">
+
+      <div class="hero-text">
+        <p class="section-tag">Broń palna</p>
+        <h2>Co to jest broń palna?</h2>
+        <p>
+          Broń palna wykorzystuje energię gazów prochowych, aby wystrzelić pocisk.
+          Stosowana jest w wojsku, policji, sporcie strzeleckim oraz myślistwie.
+          Rozwój technologiczny sprawił, że dziś mamy setki modeli o różnym zastosowaniu.
+        </p>
+      </div>
+
+      <div class="hero-panel">
+        <div class="stat-box">
+          <span class="stat-number">XIII</span>
+          <span class="stat-label">wiek powstania</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">3</span>
+          <span class="stat-label">główne typy</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">różne modele</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Broń krótka -->
+    <section class="section" id="bron-krotka">
+      <div class="section-heading">
+        <p class="section-tag">Rodzaj</p>
+        <h2>Broń krótka</h2>
+      </div>
+
+      <p>
+        Broń krótka to niewielkie, poręczne modele używane jedną ręką.
+        Najczęściej spotykane w policji, wojsku i obronie osobistej.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <img src="assets/glock17-removebg-preview.png" alt="Glock 17" />
+          <h3>Pistolety samopowtarzalne</h3>
+          <p>Wyposażone w magazynek i mechanizm automatycznego przeładowania.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/revolver1-removebg-preview.png" alt="Rewolwer" />
+          <h3>Rewolwery</h3>
+          <p>Posiadają obracający się bęben na naboje. Proste i niezawodne.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/smg-removebg-preview.png" alt="Pistolet maszynowy" />
+          <h3>Pistolety maszynowe</h3>
+          <p>Broń automatyczna do walki na krótkim dystansie.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/derringer-removebg-preview.png" alt="Derringer" />
+          <h3>Derringer</h3>
+          <p>Bardzo mała broń krótka, łatwa do ukrycia, stosowana w XIX i XX wieku.</p>
+        </article>
+      </div>
+
+      <!-- Konstrukcja broni krótkiej -->
+      <div class="section-heading" style="margin-top: 24px;">
+        <p class="section-tag">Konstrukcja</p>
+        <h2>Elementy broni krótkiej</h2>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <h3>Lufa</h3>
+          <p>Nadaje kierunek i prędkość pociskowi, często gwintowana.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Zamek</h3>
+          <p>Odpowiada za ładowanie naboju i wyrzut łuski.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Magazynek</h3>
+          <p>Przechowuje naboje i podaje je do komory nabojowej.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Spust</h3>
+          <p>Mechanizm uruchamiający strzał.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Rękojeść / chwyt</h3>
+          <p>Ułatwia trzymanie i kontrolę broni.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Broń długa -->
+    <section class="section" id="bron-dluga">
+      <div class="section-heading">
+        <p class="section-tag">Rodzaj</p>
+        <h2>Broń długa</h2>
+      </div>
+      <p>
+        Broń długa wymaga zwykle obu rąk i zapewnia większą celność oraz zasięg.
+        Współcześnie używana w wojsku, snajperskich oddziałach i myślistwie.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <img src="assets/ak47-removebg-preview.png" alt="AK-47" />
+          <h3>Karabiny szturmowe</h3>
+          <p>Podstawowa broń piechoty z możliwością ognia pojedynczego i automatycznego.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/m4-removebg-preview.png" alt="M4 Carbine" />
+          <h3>Karabiny powtarzalne</h3>
+          <p>Łatwe w obsłudze, stosowane przez wojsko i służby specjalne.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/sniper-removebg-preview.png" alt="Karabin snajperski" />
+          <h3>Karabiny snajperskie</h3>
+          <p>Do precyzyjnego strzelania na duże odległości. Wyposażone w celowniki optyczne.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/shotgun-removebg-preview.png" alt="Strzelba" />
+          <h3>Strzelby</h3>
+          <p>Używają nabojów śrutowych, stosowane w myślistwie i służbach porządkowych.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/machinegun-removebg-preview.png" alt="Karabin maszynowy" />
+          <h3>Karabiny maszynowe</h3>
+          <p>Umożliwiają prowadzenie ognia ciągłego, wsparcie piechoty i pojazdów bojowych.</p>
+        </article>
+      </div>
+
+      <!-- Konstrukcja broni długiej -->
+      <div class="section-heading" style="margin-top: 24px;">
+        <p class="section-tag">Konstrukcja</p>
+        <h2>Elementy broni długiej</h2>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <h3>Lufa</h3>
+          <p>Długa i często gwintowana dla większej celności.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Zamek</h3>
+          <p>Ładuje nabój, blokuje strzał i wyrzuca łuskę.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Magazynek / zasobnik</h3>
+          <p>Przechowuje naboje i podaje je do komory nabojowej.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Kolba</h3>
+          <p>Ułatwia stabilne trzymanie broni i poprawia celność strzału.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Spust</h3>
+          <p>Mechanizm umożliwiający oddanie strzału.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Celownik</h3>
+          <p>Może być mechaniczny lub optyczny, do precyzyjnego celowania.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Broń specjalna -->
+    <section class="section" id="specjalna">
+      <div class="section-heading">
+        <p class="section-tag">Rodzaj</p>
+        <h2>Broń specjalna</h2>
+      </div>
+
+      <p>
+        Broń specjalna obejmuje granatniki, wyrzutnie rakiet, broń taktyczną i ciężką. 
+        Stosowana w jednostkach specjalnych, wojsku i do wsparcia piechoty.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <img src="assets/grenade-removebg-preview.png" alt="Granatnik" />
+          <h3>Granatniki</h3>
+          <p>Wystrzeliwują pociski wybuchowe lub dymne, wspierają piechotę na polu walki.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/rocketlauncher-removebg-preview.png" alt="Wyrzutnia rakiet" />
+          <h3>Wyrzutnie rakiet</h3>
+          <p>Do niszczenia pojazdów opancerzonych i bunkrów.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/shotgun-tactical.jpg" alt="Strzelba taktyczna" />
+          <h3>Strzelby taktyczne</h3>
+          <p>Używane przez jednostki specjalne w walce w pomieszczeniach.</p>
+        </article>
+
+        <article class="card">
+          <img src="assets/mg-heavy-removebg-preview.png" alt="Ciężki karabin maszynowy" />
+          <h3>Ciężkie karabiny maszynowe</h3>
+          <p>Mocne, często montowane na pojazdach lub statywach, wspierają piechotę ogniem ciągłym.</p>
+        </article>
+      </div>
+
+      <!-- Konstrukcja broni specjalnej -->
+      <div class="section-heading" style="margin-top: 24px;">
+        <p class="section-tag">Konstrukcja</p>
+        <h2>Elementy broni specjalnej</h2>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <h3>Lufa</h3>
+          <p>Dostosowana do rodzaju pocisku, może być krótka, długa lub wielolufowa.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Zamek / mechanizm</h3>
+          <p>Odpowiada za załadunek i wystrzał; w broni automatycznej zapewnia cykliczne podawanie amunicji.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Magazynek / zasobnik</h3>
+          <p>Przechowuje duże ilości amunicji lub granatów.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Kolba / uchwyt</h3>
+          <p>Stabilizuje broń podczas strzału, może być regulowana lub składana.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Celownik</h3>
+          <p>Mechaniczny, optyczny lub termowizyjny, zależnie od zastosowania.</p>
+        </div>
+
+        <div class="fact">
+          <h3>Dodatki</h3>
+          <p>Montaż na statywach, bipody, tłumiki, celowniki laserowe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section class="section" id="historia">
+      <div class="section-heading">
+        <p class="section-tag">Historia</p>
+        <h2>Rozwój broni palnej</h2>
+      </div>
+
+      <p>
+        Broń palna powstała w Chinach w XIII wieku. Pierwsze konstrukcje były proste, wystrzeliwały pocisk z metalowej rury przy pomocy prochu.
+      </p>
+
+      <p>
+        W średniowieczu powstały muszkiety i pistolety skałkowe. W XIX wieku wprowadzono naboje metalowe i rewolwery. XX wiek to czas karabinów automatycznych, strzelb i nowoczesnych pistoletów maszynowych.
+      </p>
+
+      <p>
+        Dziś broń palna to zaawansowana technologia: lekkie materiały, celowniki optyczne, mechanizmy półautomatyczne i automatyczne oraz broń specjalna wspierająca działania wojskowe i policyjne.
+      </p>
+    </section>
+
+  </main>
+
+  <aside class="sidebar right-sidebar">
+    <h2>Ciekawostka</h2>
+
+    <div class="sidebar-box">
+      <h3>Fakt</h3>
+      <p>
+        Pierwsze formy broni palnej powstały w Chinach około XIII wieku i były wykorzystywane głównie w działaniach wojennych.
+      </p>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Projekt szkolny — Uzbrojenie</p>
+    <p>Autor działu: Radek</p>
+  </div>
+</footer>
+
+</body>
+</html>

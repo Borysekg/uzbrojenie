@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzbrojenie świata</title>
+    <meta name="description" content="Strona edukacyjna o rodzajach uzbrojenia: lotnictwo, czołgi, broń palna, marynarka wojenna i inne.">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-top container">
+            <div class="brand">
+                <p class="brand-label">Projekt edukacyjny</p>
+                <h1>UZBROJENIE</h1>
+                <p class="brand-subtitle">Przegląd współczesnych i historycznych rodzajów uzbrojenia</p>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">
+                ☰
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            <div class="container nav-inner">
+                <a href="#o-projekcie">O projekcie</a>
+                <a href="#dzialy">Działy</a>
+                <a href="#autorzy">Autorzy</a>
+                <a href="#ciekawostki">Ciekawostki</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-layout container">
+        <aside class="sidebar left-sidebar">
+            <h2>Szybka nawigacja</h2>
+            <ul>
+                <li><a href="#lotnictwo">Lotnictwo</a></li>
+                <li><a href="#bron-masowego-razenia">Broń masowego rażenia</a></li>
+                <li><a href="#czolgi">Czołgi</a></li>
+                <li><a href="#bron-palna">Broń palna</a></li>
+                <li><a href="#pojazdy-opancerzone">Pojazdy opancerzone</a></li>
+                <li><a href="#marynarka">Marynarka wojenna</a></li>
+                <li><a href="#opancerzenie">Opancerzenie</a></li>
+                <li><a href="#bron-biala">Broń biała</a></li>
+            </ul>
+
+            <div class="sidebar-box">
+                <h3>Temat strony</h3>
+                <p>
+                    Strona prezentuje najważniejsze rodzaje uzbrojenia oraz ich zastosowanie,
+                    historię i rozwój technologiczny.
+                </p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="hero" id="o-projekcie">
+                <div class="hero-text">
+                    <p class="section-tag">Strona główna</p>
+                    <h2>Witaj w projekcie o uzbrojeniu</h2>
+                    <p>
+                        Nasza witryna została przygotowana jako projekt szkolny. Zebraliśmy najważniejsze
+                        informacje o różnych typach uzbrojenia: od lotnictwa i czołgów, po marynarkę wojenną,
+                        broń palną i broń białą.
+                    </p>
+                    <a href="#dzialy" class="btn-primary">Przejdź do działów</a>
+                </div>
+
+                <div class="hero-panel">
+                    <div class="stat-box">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">głównych działów</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">wspólny projekt</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">klasowego stylu</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="dzialy">
+                <div class="section-heading">
+                    <p class="section-tag">Kategorie</p>
+                    <h2>Główne działy strony</h2>
+                </div>
+
+                <div class="cards-grid">
+                    <article class="card" id="lotnictwo">
+                        <h3>Lotnictwo</h3>
+                        <p>Samoloty bojowe, śmigłowce, przewaga powietrzna i znaczenie lotnictwa w działaniach wojennych.</p>
+                        <span class="card-author">Autor: Jakub</span>
+                    </article>
+
+                    <article class="card" id="bron-masowego-razenia">
+                        <h3>Broń masowego rażenia</h3>
+                        <p>Charakterystyka broni atomowej, chemicznej i biologicznej oraz ich wpływ na historię.</p>
+                        <span class="card-author">Autor: Norbert</span>
+                    </article>
+
+                    <article class="card" id="czolgi">
+                        <h3>Czołgi</h3>
+                        <p>Budowa, uzbrojenie i zastosowanie czołgów na przestrzeni lat.</p>
+                        <span class="card-author">Autor: Kaczmarek</span>
+                    </article>
+
+                    <article class="card" id="bron-palna">
+                        <h3>Broń palna</h3>
+                        <p>Broń krótka i długa, podstawowe podziały, działanie i znaczenie w wojsku.</p>
+                        <span class="card-author">Autor: Jarek</span>
+                    </article>
+
+                    <article class="card" id="pojazdy-opancerzone">
+                        <h3>Pojazdy opancerzone</h3>
+                        <p>Transportery, wozy bojowe piechoty i inne pojazdy używane na polu walki.</p>
+                        <span class="card-author">Autor: Hubert</span>
+                    </article>
+
+                    <article class="card" id="marynarka">
+                        <h3>Marynarka wojenna</h3>
+                        <p>Okręty, uzbrojenie morskie i rola sił morskich we współczesnych konfliktach.</p>
+                        <span class="card-author">Autor: Kacper</span>
+                    </article>
+
+                    <article class="card" id="opancerzenie">
+                        <h3>Opancerzenie</h3>
+                        <p>Rodzaje pancerza, ich budowa oraz sposoby ochrony załogi i pojazdów.</p>
+                        <span class="card-author">Autor: Antek</span>
+                    </article>
+
+                    <article class="card" id="bron-biala">
+                        <h3>Broń biała</h3>
+                        <p>Historia mieczy, szabli, noży i innych rodzajów broni używanej bez materiałów wybuchowych.</p>
+                        <span class="card-author">Autor: Mati</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section info-section" id="autorzy">
+                <div>
+                    <p class="section-tag">Zespół</p>
+                    <h2>Kto nad czym pracuje?</h2>
+                    <p>
+                        Każda osoba odpowiada za własny dział tematyczny, dzięki czemu cała strona będzie
+                        bardziej uporządkowana i łatwiejsza do rozwijania.
+                    </p>
+                </div>
+
+                <div class="authors-list">
+                    <div class="author-item">Jakub — Lotnictwo</div>
+                    <div class="author-item">Norbert — Broń masowego rażenia</div>
+                    <div class="author-item">Kaczmarek — Czołgi</div>
+                    <div class="author-item">Jarek — Broń palna</div>
+                    <div class="author-item">Hubert — Pojazdy opancerzone</div>
+                    <div class="author-item">Kacper — Marynarka wojenna</div>
+                    <div class="author-item">Antek — Opancerzenie</div>
+                    <div class="author-item">Mati — Broń biała</div>
+                </div>
+            </section>
+
+            <section class="section" id="ciekawostki">
+                <div class="section-heading">
+                    <p class="section-tag">Ciekawostki</p>
+                    <h2>Dlaczego warto poznać ten temat?</h2>
+                </div>
+
+                <div class="facts">
+                    <div class="fact">
+                        <h3>Historia</h3>
+                        <p>Rozwój uzbrojenia pokazuje, jak technologia wpływała na dzieje państw i społeczeństw.</p>
+                    </div>
+                    <div class="fact">
+                        <h3>Technologia</h3>
+                        <p>Nowoczesne systemy wojskowe łączą mechanikę, elektronikę, informatykę i automatykę.</p>
+                    </div>
+                    <div class="fact">
+                        <h3>Wiedza</h3>
+                        <p>Znajomość podstaw pozwala lepiej rozumieć współczesny świat i wydarzenia międzynarodowe.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section tanks-gallery">
+                <div class="section-heading">
+                    <p class="section-tag">Czołgi</p>
+                    <h2>Galeria czołgów</h2>
+                </div>
+            
+                <div class="tanks-grid">
+            
+                    <div class="tank-card">
+                        <img src="assets/leopard2.jpg" alt="Leopard 2A7">
+                        <h3>Leopard 2A7</h3>
+                        <p>
+                            Niemiecki czołg podstawowy używany przez wiele armii NATO. 
+                            Charakteryzuje się bardzo silnym pancerzem kompozytowym oraz 
+                            armatą kalibru 120 mm. Jest jednym z najnowocześniejszych 
+                            czołgów w Europie.
+                        </p>
+                    </div>
+            
+                    <div class="tank-card">
+                        <img src="assets/abrams.jpg" alt="M1A2 Abrams">
+                        <h3>M1A2 Abrams</h3>
+                        <p>
+                            Główny czołg armii Stanów Zjednoczonych. Posiada zaawansowane 
+                            systemy celownicze, pancerz kompozytowy z dodatkiem uranu 
+                            zubożonego oraz potężną armatę 120 mm.
+                        </p>
+                    </div>
+            
+                    <div class="tank-card">
+                        <img src="assets/t90.jpg" alt="T-90">
+                        <h3>T-90</h3>
+                        <p>
+                            Rosyjski czołg podstawowy będący rozwinięciem konstrukcji 
+                            T-72. Wyposażony w systemy ochrony aktywnej oraz armatę 
+                            125 mm zdolną do wystrzeliwania pocisków kierowanych.
+                        </p>
+                    </div>
+            
+                    <div class="tank-card">
+                        <img src="assets/challenger2.jpg" alt="Challenger 2">
+                        <h3>Challenger 2</h3>
+                        <p>
+                            Brytyjski czołg podstawowy znany z bardzo wytrzymałego 
+                            pancerza typu Chobham. Używany przez armię Wielkiej 
+                            Brytanii i uznawany za jeden z najlepiej chronionych 
+                            czołgów świata.
+                        </p>
+                    </div>
+                    <div class="tank-card">
+                        <img src="assets/panzeriv.jpg" alt="Panzer IV">
+                        <h3>Panzer IV</h3>
+                        <p>
+                            Niemiecki czołg średni używany podczas II wojny światowej. Był jednym
+                            z najważniejszych pojazdów pancernych Wehrmachtu i brał udział w wielu
+                            bitwach na różnych frontach wojny.
+                        </p>
+                    </div>
+                    
+                    <div class="tank-card">
+                        <img src="assets/tigerI.jpg" alt="Tiger I">
+                        <h3>Tiger I</h3>
+                        <p>
+                            Niemiecki ciężki czołg z okresu II wojny światowej. Słynął z bardzo
+                            silnego pancerza oraz potężnej armaty 88 mm, która była w stanie
+                            zniszczyć większość alianckich czołgów z dużej odległości.
+                        </p>
+                    </div>
+                    
+                    <div class="tank-card">
+                        <img src="assets/t34.jpg" alt="T-34">
+                        <h3>T-34</h3>
+                        <p>
+                            Radziecki czołg średni uznawany za jeden z najlepszych czołgów II wojny
+                            światowej. Charakteryzował się pochylonym pancerzem, dobrą mobilnością
+                            i stosunkowo prostą produkcją masową.
+                        </p>
+                    </div>
+                    
+                    <div class="tank-card">
+                        <img src="assets/is2.jpg" alt="IS-2">
+                        <h3>IS-2</h3>
+                        <p>
+                            Radziecki ciężki czołg używany pod koniec II wojny światowej. Był
+                            wyposażony w potężną armatę kalibru 122 mm, która była skuteczna
+                            przeciwko niemieckim czołgom ciężkim.
+                        </p>
+                    </div>
+                    
+                    <div class="tank-card">
+                        <img src="assets/merkava.jpg" alt="Merkava Mk4">
+                        <h3>Merkava Mk4</h3>
+                        <p>
+                            Nowoczesny izraelski czołg podstawowy. Został zaprojektowany z dużym
+                            naciskiem na ochronę załogi oraz nowoczesne systemy elektroniczne
+                            wspomagające walkę.
+                        </p>
+                    </div>
+                    
+                    <div class="tank-card">
+                        <img src="assets/leclerc.jpg" alt="Leclerc">
+                        <h3>Leclerc</h3>
+                        <p>
+                            Francuski czołg podstawowy wyposażony w automatyczny system ładowania
+                            działa oraz nowoczesną elektronikę bojową. Uważany jest za jeden z
+                            najbardziej zaawansowanych technologicznie czołgów w Europie.
+                        </p>
+                    </div>
+                    
+                    <div class="tank-card">
+                        <img src="assets/blackpanther.jpg" alt="K2 Black Panther">
+                        <h3>K2 Black Panther</h3>
+                        <p>
+                            Południowokoreański czołg podstawowy nowej generacji. Posiada
+                            zaawansowane systemy celownicze, aktywną ochronę oraz bardzo dużą
+                            mobilność na polu walki.
+                        </p>
+                    </div>
+                    
+                    <div class="tank-card">
+                        <img src="assets/twardy.jpg" alt="PT-91 Twardy">
+                        <h3>PT-91 Twardy</h3>
+                        <p>
+                            Polski czołg podstawowy będący modernizacją radzieckiego T-72.
+                            Wyposażony w ulepszony pancerz reaktywny ERAWA oraz nowoczesne
+                            systemy kierowania ogniem.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section tank-tech">
+
+                <div class="section-heading">
+                    <p class="section-tag">Technologia</p>
+                    <h2>Nowoczesne technologie w czołgach</h2>
+                </div>
+            
+                <div class="tech-grid">
+            
+                    <div class="tech-card">
+                        <h3>Systemy aktywnej ochrony (APS)</h3>
+                        <p>
+                            Nowoczesne czołgi posiadają systemy aktywnej ochrony,
+                            które wykrywają nadlatujące pociski przeciwpancerne
+                            i niszczą je zanim trafią w pojazd. Przykładem jest
+                            izraelski system Trophy.
+                        </p>
+                    </div>
+            
+                    <div class="tech-card">
+                        <h3>Pancerz kompozytowy</h3>
+                        <p>
+                            Współczesne czołgi używają wielowarstwowego pancerza
+                            złożonego ze stali, ceramiki i materiałów syntetycznych.
+                            Dzięki temu są znacznie lepiej chronione przed
+                            pociskami przeciwpancernymi.
+                        </p>
+                    </div>
+            
+                    <div class="tech-card">
+                        <h3>Systemy celownicze i termowizja</h3>
+                        <p>
+                            Zaawansowane systemy optyczne i kamery termowizyjne
+                            pozwalają wykrywać cele w nocy oraz w trudnych
+                            warunkach pogodowych, takich jak mgła czy dym.
+                        </p>
+                    </div>
+            
+                    <div class="tech-card">
+                        <h3>Automaty ładowania</h3>
+                        <p>
+                            Niektóre nowoczesne czołgi posiadają automatyczny
+                            system ładowania działa, który zastępuje członka
+                            załogi odpowiedzialnego za ładowanie pocisków.
+                            Pozwala to zmniejszyć załogę i zwiększyć szybkostrzelność.
+                        </p>
+                    </div>
+            
+                    <div class="tech-card">
+                        <h3>Systemy cyfrowe i komunikacja</h3>
+                        <p>
+                            Nowoczesne pojazdy pancerne korzystają z komputerów
+                            pokładowych oraz systemów komunikacji cyfrowej,
+                            które umożliwiają współpracę z innymi jednostkami
+                            na polu walki.
+                        </p>
+                    </div>
+            
+                    <div class="tech-card">
+                        <h3>Drony i rozpoznanie</h3>
+                        <p>
+                            Coraz częściej czołgi współpracują z dronami
+                            rozpoznawczymi, które pomagają wykrywać cele
+                            z dużej odległości i zwiększają świadomość
+                            sytuacyjną załogi.
+                        </p>
+                    </div>
+            
+                </div>
+            
+            </section>
+
+            <section class="section tank-ranking">
+
+                <div class="section-heading">
+                    <p class="section-tag">Ranking</p>
+                    <h2>Państwa z najlepszymi czołgami na świecie</h2>
+                </div>
+            
+                <div class="ranking-list">
+            
+                    <div class="ranking-item gold">
+                        <span class="rank">1</span>
+                        <img src="assets/flagusa.jpg" alt="USA">
+                        <div>
+                            <h3>Stany Zjednoczone</h3>
+                            <p>M1A2 Abrams – jeden z najpotężniejszych czołgów świata.</p>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item silver">
+                        <span class="rank">2</span>
+                        <img src="assets/flaggermany.jpg" alt="Niemcy">
+                        <div>
+                            <h3>Niemcy</h3>
+                            <p>Leopard 2A7 – bardzo nowoczesny czołg używany w wielu armiach.</p>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item bronze">
+                        <span class="rank">3</span>
+                        <img src="assets/korea.png" alt="Korea">
+                        <div>
+                            <h3>Korea Południowa</h3>
+                            <p>K2 Black Panther – jeden z najbardziej zaawansowanych technologicznie czołgów.</p>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <span class="rank">4</span>
+                        <img src="assets/france.jpg" alt="Francja">
+                        <div>
+                            <h3>Francja</h3>
+                            <p>Leclerc – nowoczesny czołg z automatem ładowania.</p>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <span class="rank">5</span>
+                        <img src="assets/russia.png" alt="Rosja">
+                        <div>
+                            <h3>Rosja</h3>
+                            <p>T-90 – rozwinięcie konstrukcji T-72 z nowoczesnymi systemami.</p>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <span class="rank">6</span>
+                        <img src="assets/poland.png" alt="Polska">
+                        <div>
+                            <h3>Polska</h3>
+                            <p>PT-91 Twardy oraz nowe czołgi K2 i Abrams w polskiej armii.</p>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </section>
+
+            <section class="section tank-stats">
+
+                <div class="section-heading">
+                    <p class="section-tag">Parametry</p>
+                    <h2>Cena i prędkość współczesnych czołgów</h2>
+                    <p>
+                        Nowoczesne czołgi są jednymi z najdroższych pojazdów wojskowych.
+                        Ich cena zależy od technologii, pancerza oraz systemów
+                        elektronicznych. Poniżej przedstawiono przykłady wybranych
+                        czołgów wraz z ich orientacyjną ceną i maksymalną prędkością.
+                    </p>
+                </div>
+            
+                <div class="stats-grid">
+            
+                    <div class="stat-card">
+                        <h3>M1A2 Abrams</h3>
+                        <p><strong>Kraj:</strong> USA</p>
+                        <p><strong>Cena:</strong> ok. 8–10 mln USD</p>
+                        <p><strong>Prędkość maksymalna:</strong> ok. 67 km/h</p>
+                    </div>
+            
+                    <div class="stat-card">
+                        <h3>Leopard 2A7</h3>
+                        <p><strong>Kraj:</strong> Niemcy</p>
+                        <p><strong>Cena:</strong> ok. 10–12 mln USD</p>
+                        <p><strong>Prędkość maksymalna:</strong> ok. 70 km/h</p>
+                    </div>
+            
+                    <div class="stat-card">
+                        <h3>K2 Black Panther</h3>
+                        <p><strong>Kraj:</strong> Korea Południowa</p>
+                        <p><strong>Cena:</strong> ok. 8,5 mln USD</p>
+                        <p><strong>Prędkość maksymalna:</strong> ok. 70 km/h</p>
+                    </div>
+            
+                    <div class="stat-card">
+                        <h3>Leclerc</h3>
+                        <p><strong>Kraj:</strong> Francja</p>
+                        <p><strong>Cena:</strong> ok. 9 mln USD</p>
+                        <p><strong>Prędkość maksymalna:</strong> ok. 72 km/h</p>
+                    </div>
+            
+                    <div class="stat-card">
+                        <h3>T-90</h3>
+                        <p><strong>Kraj:</strong> Rosja</p>
+                        <p><strong>Cena:</strong> ok. 4–5 mln USD</p>
+                        <p><strong>Prędkość maksymalna:</strong> ok. 60 km/h</p>
+                    </div>
+            
+                    <div class="stat-card">
+                        <h3>PT-91 Twardy</h3>
+                        <p><strong>Kraj:</strong> Polska</p>
+                        <p><strong>Cena:</strong> ok. 3–4 mln USD</p>
+                        <p><strong>Prędkość maksymalna:</strong> ok. 60 km/h</p>
+                    </div>
+            
+                </div>
+            
+            </section>
+        </main>
+
+        <aside class="sidebar right-sidebar">
+            <h2>Panel boczny</h2>
+
+            <div class="sidebar-box">
+                <h3>Paleta kolorów</h3>
+                <div class="palette">
+                    <span style="background:#90AB73;"></span>
+                    <span style="background:#6A7D56;"></span>
+                    <span style="background:#444F38;"></span>
+                    <span style="background:#4B573E;"></span>
+                    <span style="background:#5B5B38;"></span>
+                    <span style="background:#6A5F31;"></span>
+                    <span style="background:#59522E;"></span>
+                    <span style="background:#47442A;"></span>
+                </div>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Pomysł na assets</h3>
+                <p>
+                    Do folderu <strong>assets</strong> możecie później wrzucić tło, ikony działów,
+                    zdjęcia pojazdów i np. miniatury do kart.
+                </p>
+            </div>
+
+            <div class="sidebar-box" id="kontakt">
+                <h3>Kontakt / stopka projektu</h3>
+                <p>Technikum – projekt zawodowy</p>
+                <p>Temat: uzbrojenie</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Projekt szkolny — Uzbrojenie</p>
+            <p>Wykonanie: zespół projektowy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
